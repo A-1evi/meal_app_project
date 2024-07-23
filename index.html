@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-green-400 text-white text-center p-4 shadow-md">
+      <h1 class="text-4xl font-bold sevillana-regular">Meal App</h1>
+      <nav>
+        <button id="home-btn" class="underline">Home</button>
+        <button id="favorites-btn" class="font-bold ml-4">My Favorites</button>
+      </nav>
+    </header>
+    <main class="p-4">
+      <section id="home-section">
+        <h2></h2>
+        <input
+          type="text"
+          id="search"
+          placeholder="Search for meals..."
+          class="mt-2 p-2 rounded border-2 border-gray w-1/2"
+        />
+        <div
+          id="meal-results"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 m-8 p-5 shadow-md"
+        ></div>
+      </section>
+      <section id="meal-detail-section" class="hidden">
+        <button id="back-btn" class="font-bold">Back</button>
+        <div
+          id="meal-detail"
+          class="bg-white p-6 rounded-lg shadow-md mt-4"
+        ></div>
+      </section>
+      <section id="favorites-section" class="hidden">
+        <div
+          id="favorite-meals"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4"
+        ></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

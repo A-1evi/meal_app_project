@@ -1,0 +1,45 @@
+
+/* Basic styles for Meal App */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.sevillana-regular {
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a.underline {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+.meal-card {
+    cursor: pointer;
+}
+
+.meal-card img {
+    border-radius: 8px;
+}
+
+button {
+    cursor: pointer;
+}
